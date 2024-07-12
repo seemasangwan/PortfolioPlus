@@ -28,50 +28,48 @@ DynamicPortfolio is a personal portfolio website that allows users to dynamicall
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/DynamicPortfolio.git
-   cd DynamicPortfolio
+   cd DynamicPortfolio ```
 
-## Install dependencies:
-
-# bash
--Copy code
--npm install
--Set up environment variables:
-
--Create a .env file in the root directory
-## Add the following variables:
- -plaintext
--PORT=3000
--MONGODB_URI=your_mongodb_connection_string
--SECRET_KEY=your_secret_key
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3  **Set up environment variables:**
+   - Create a .env file in the root directory
+   - Add the following variables:
+   - plaintext
+```
+   PORT=3000
+   MONGODB_URI=your_mongodb_connection_string
+   SECRET_KEY=your_secret_key
+```
 ## Configure MongoDB:
-
--Ensure MongoDB is running locally or provide a connection string to a MongoDB Atlas instance.
+Ensure MongoDB is running locally or provide a connection string to a MongoDB Atlas instance.
 
 ## Usage
--Start the server:
--npm start
-
-
-## Access the application:
-
-Open your browser and go to http://localhost:3000
+1.  **Start the server:**
+     ```
+     npm start
+     ```
+2.  **Access the application:**
+     - Open your browser and go to http://localhost:3000
 
 ## Project Structure
--public/: Static files (CSS, images)
--src/: Server-side code
--templates/: Handlebars templates
--views/: Main views
--partials/: Partial views
+- public/: Static files (CSS, images)
+- src/: Server-side code
+- templates/: Handlebars templates
+- views/: Main views
+- partials/: Partial views
 
 ## Routes
--/: Homepage
--/add: Add new items (projects, skills, certificates, experiences)
--/delete: Delete items
--/project: View projects
--/skill: View skills
--/certificate: View certificates
--/experience: View experiences
--/login: Login
+- /: Homepage
+- /add: Add new items (projects, skills, certificates, experiences)
+- /delete: Delete items
+- /project: View projects
+- /skill: View skills
+- /certificate: View certificates
+- /experience: View experiences
+- /login: Login
 
 
 ## Adding Data
