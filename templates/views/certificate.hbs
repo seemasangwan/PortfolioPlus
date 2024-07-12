@@ -1,0 +1,62 @@
+<!-- certificates.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/color-1.css" class="alternative-style" title="color-1">
+    <link rel="stylesheet" href="/css/color-2.css" class="alternative-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/color-3.css" class="alternative-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/css/color-4.css" class="alternative-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/css/color-5.css" class="alternative-style" title="color-5" disabled>
+    <link rel="stylesheet" href="/css/style-switcher.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body class="dark">
+    <div class="main-container">
+        {{>left}}
+        <div class="right">
+            <section id="project" class="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="sectiontitle padd-15">
+                            <h2>Certificates</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each certificates}}
+                        <div class="project-item">
+                            <div class="project-item-inner">
+                                <div class="icon">
+                                    <i class="fa {{this.icon}}"></i>
+                                </div>
+                                <br>
+                                <a href="{{this.url}}">
+                                    <h4>{{this.name}}</h4>
+                                </a>
+                                {{#if this.ppturl}}
+                                <br>
+                                <a href="{{this.ppturl}}">
+                                    <h4>{{this.pptname}}</h4>
+                                </a>
+                                {{/if}}
+                                <br>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </section>
+        </div>
+        {{>theme}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/style-switcher.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/color-1.css" class="alternative-style" title="color-1">
+    <link rel="stylesheet" href="/css/color-2.css" class="alternative-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/color-3.css" class="alternative-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/css/color-4.css" class="alternative-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/css/color-5.css" class="alternative-style" title="color-5" disabled>
+    <link rel="stylesheet" href="/css/style-switcher.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+    </style>
+</head>
+<body class="dark">
+    <div class="main-container">
+        {{>left}}
+        <div class="right">
+            <section id="experience" class="experience">
+                <div class="experience-title">
+                    <h2>Experience</h2>
+                </div>
+                {{#each experiences}}
+                <div class="experience-card">
+                    <h3 class="date"><i class="fa fa-calendar"></i> {{this.duration}}</h3>
+                    <h4>{{this.position}}</h4>
+                    <p><b>{{this.company}}</b><br>
+                        {{this.description}}
+                    </p>
+                </div>
+                {{/each}}
+            </section>
+        </div>
+        {{>theme}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/style-switcher.js"></script>
+</body>
+</html>

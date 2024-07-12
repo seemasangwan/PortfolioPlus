@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/addproject.css">
+     <link rel="stylesheet" href="/css/color-1.css" class="alternative-style" title="color-1">
+    <link rel="stylesheet" href="/css/color-2.css" class="alternative-style" title="color-2"disabled>
+    <link rel="stylesheet" href="/css/color-3.css" class="alternative-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/css/color-4.css" class="alternative-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/css/color-5.css" class="alternative-style" title="color-5" disabled>
+    <link rel="stylesheet" href="/css/style-switcher.css">
+    <link rel="stylesheet" href="/css/add.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ </style>
+</head>
+<body class="dark">
+   <div class="main-container">
+    {{>left}}
+    <div class="right-side">
+    <h2>Project Details</h2>
+    <form action="/addproject" method="POST">
+        <div class="form-group">
+            <label for="icon">Icon URL:</label>
+            <input  placeholder="Enter Icon URL"type="text" id="icon" name="icon" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input placeholder="Enter Project Name"type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="url">URL:</label>
+            <input placeholder="Enter Project URL" type="text" id="url" name="url" required>
+        </div>
+        <div class="form-group">
+            <label for="techstack">Techstack:</label>
+            <input placeholder="Enter Project TechStack"type="text" id="Techstack" name="Techstack" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea  placeholder="Enter Project description"id="description" name="description" required></textarea>
+        </div>
+        <button type="submit">Add Project</button>
+    </form>
+</div>
+  {{>theme}}
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/style-switcher.js"></script>
+</body>
+</html>
+
+
+<!-- Right Side: Form -->
+
